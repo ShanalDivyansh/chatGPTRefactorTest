@@ -9,3 +9,5 @@ Split the dataset by running
 
 Ask chatGPT to refactor 
 -> npm run start
+
+Note remember to add your own API_KEY in the .env 
