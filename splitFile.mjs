@@ -1,10 +1,19 @@
-import { writeFile } from "fs";
+import { existsSync,mkdirSync,writeFile } from "fs";
 import { readFile } from "fs/promises";
 
 const file = await readFile(
   new URL("beforeFinal.csv", import.meta.url),
   "utf-8"
 );
+
+const dir1 = './Original_Code';
+const dir2 = './Refactor_Code';
+
+if (!existsSync(dir1) || !existsSync(dir2)){
+    mkdirSync(dir1);
+    mkdirSync(dir2);
+
+}
 
 const fileData = file.split("-End");
 console.log(`Total number of files read: ${fileData.length}`);
