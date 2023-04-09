@@ -1,0 +1,27 @@
+{
+  "name": "chatgptrefactortest",
+  "version": "1.0.0",
+  "description": "By inputting code into ChatGPT and requesting it to refactor, one can evaluate if the resulting code is an improvement over the original.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node script.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShanalDivyansh/chatGPTRefactorTest.git"
+  },
+  "keywords": [
+    "Refactoring"
+  ],
+  "author": "Shanal Divyansh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShanalDivyansh/chatGPTRefactorTest/issues"
+  },
+  "homepage": "https://github.com/ShanalDivyansh/chatGPTRefactorTest#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1"
+  }
+}
